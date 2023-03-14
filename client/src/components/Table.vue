@@ -5,13 +5,13 @@
       <thead>
         <tr>
           <th></th>
-          <th v-for="(column, index) in columns" :key="index">{{ column }}</th>
+          <th class="bg-yellow-400" v-for="(column, index) in columns" :key="index">{{ column }}</th>
         </tr>
       </thead>
       <tbody>
         <tr  v-for="(row, index) in rows" :key="index">
-          <td class="p-4">{{ row[0] }}</td>
-          <td  class="p-4" v-for="(column, index) in row.slice(1)" :key="index">
+          <td class="p-4 bg-blue-300" >{{ row[0] }}</td>
+          <td  class="p-4 bg-red-300" v-for="(column, index) in row.slice(1)" :key="index">
             {{ column }}
           </td>
         </tr>
